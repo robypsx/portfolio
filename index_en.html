@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - English</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="language-switch">
+            <a href="index_en.html">EN</a> |
+            <a href="index_es.html">ES</a>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- Home Section -->
+        <section id="home">
+            <p>Hi there! I'm Charlie, a <b class="animated-text">
+                    <span style="--i: 1">w</span><span style="--i: 2">e</span><span style="--i: 3">b</span>
+                    <span style="--i: 4">d</span><span style="--i: 5">e</span><span style="--i: 6">v</span><span
+                        style="--i: 7">e</span><span style="--i: 8">l</span><span style="--i: 9">o</span><span
+                        style="--i: 10">p</span><span style="--i: 11">e</span><span style="--i: 12">r</span>
+                </b>
+                based in Mexico. <br>Explore my skills and projects below.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="skill-cards">
+                <a href="lang/en/css.html" class="skill-card">
+                    <img src="assets/css.png" alt="CSS">
+                    <div class="overlay">
+                        <h3>CSS</h3>
+                    </div>
+                </a>
+                <div class="skill-card">
+                    <img src="assets/html.png" alt="HTML">
+                    <div class="overlay">
+                        <h3>HTML</h3>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/js.png" alt="JavaScript">
+                    <div class="overlay">
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+                <!-- Add more skill cards as needed -->
+            </div>
+        </section>
+
+        <section id="canvas">
+            <button id="changeAnimationBtn">Change Animation</button>
+            <div id="canvas-container">
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>Github: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"}
+        }
+    </script>
+    <script type="module" src="js/model.js"></script>
+</body>
+
+</html>

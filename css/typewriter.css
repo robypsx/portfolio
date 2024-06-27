@@ -1,0 +1,27 @@
+.typewriter h1 {
+    overflow: hidden; /* Ensures the text is initially hidden */
+    border-right: .15em solid orange; /* Simulates the typing cursor */
+    white-space: nowrap; /* Keeps text on a single line */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .15em; /* Adjusts spacing between characters */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    /* Typing animation duration and cursor blink animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Start typing with no width */
+    }
+    to {
+        width: 100%; /* Typing animation ends with full width */
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Cursor blink effect */
+    }
+    50% {
+        border-color: orange; /* Blink color */
+    }
+}
