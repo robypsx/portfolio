@@ -8,35 +8,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header styling */
-header {
-    background-color: #333;
-    padding: 15px 20px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Language switch styling */
-.language-switch {
-    display: flex;
-    gap: 15px;
-    font-size: 16px;
-}
-
-.language-switch a {
-    color: #f0f0f0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    padding: 5px;
-}
-
-.language-switch a:hover {
-    color: #fff;
-    background-color: #555;
-    border-radius: 3px;
-}
 
 /* Main content styling */
 main {
@@ -96,9 +67,9 @@ main {
     position: relative;
     overflow: hidden;
     width: 300px; /* Adjust width as needed */
-    height: 250px; /* Adjust height as needed */
+    height: 200px; /* Adjust height as needed */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease;
 }
 
@@ -106,7 +77,6 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .skill-card .overlay {
@@ -121,7 +91,6 @@ main {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 10px;
 }
 
 .skill-card:hover {
