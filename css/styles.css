@@ -1,28 +1,30 @@
 /* Reset and basic styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #1c1c1c;
     color: #f0f0f0;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
+.container{
+    width: 90%;
+    margin: auto;
+}
 
-/* Main content styling */
-main {
-    padding: 20px;
-    text-align: center;
+.d-flex{
+    display: flex;
 }
 
 /* Home Section styling */
-#home {
-    padding: 50px 20px;
+.home-message {
+    padding-top: 50px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 24px; /* Increase font size for better readability */
-    font-family: 'Arial', sans-serif; /* Example: Use a different font */
     color: #fff; /* White text color */
 }
+
 
 @keyframes jump {
     0%, 100% {
@@ -36,19 +38,22 @@ main {
 .animated-text {
     display: inline-block;
     font-size: 28px;
-    color:#9b7aff; /* Text color */
+    color:#9b7aff; 
 }
 
 .animated-text span {
     display: inline-block;
-    animation: none; /* Initially no animation */
-    transform-origin: bottom; /* Start animation from bottom */
 }
 .animated-text:hover span {
     animation: jump 1s ease-in-out infinite; /* Infinite animation */
     animation-delay: calc(0.1s * var(--i)); /* Delay each letter */
 }
 
+#canvas-container{
+    width: 300px;
+    height: 250px;
+    border: 2px dashed #5d5a5a;
+}
 
 /* Skills section styling */
 #skills {
@@ -75,8 +80,7 @@ main {
 
 .skill-card img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+ 
 }
 
 .skill-card .overlay {
@@ -106,21 +110,8 @@ main {
     font-size: 18px;
 }
 
-#canvas {
-    padding: 50px 20px;
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-   
-}
 
-#canvas-container{
-    height: 500px;
-    border: 2px solid #5d5a5a;
-    display: flex;
-  
-    
-}
+
 
 #changeAnimationBtn {
     position: absolute;
