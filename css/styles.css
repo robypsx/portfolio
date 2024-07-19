@@ -16,7 +16,7 @@ p {
 .container{
     width: 90%;
     margin: auto;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .d-flex{
@@ -71,7 +71,6 @@ footer {
 }
 
 .contact-info {
-    display: flex;
     justify-content: center;
     gap: 20px; 
 }
@@ -130,7 +129,11 @@ footer {
 
     .contact-info {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
+       
+    }
+    .contact-info  p {
+        font-size: 1.5rem;
     }
 
 }
@@ -143,5 +146,9 @@ footer {
 
     #canvas-container{
         height: 300px;
+    }
+
+    .contact-info  p {
+        font-size: 1.2rem;
     }
 }
