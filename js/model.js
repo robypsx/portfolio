@@ -101,17 +101,20 @@ loader.load('assets/spyrocup.glb', (gltf) => {
 // }
 
 // Position the camera
-camera.position.set(0, 2, -4);
+camera.position.set(0, 1.5, -4);
 
 // Render function
 function animate() {
     requestAnimationFrame(animate);
-
+    if (model) {
+        model.rotation.y += 0.01; // Rotate model if it's loaded
+    }
     // // Update the mixer on each frame if it exists
     // if (mixer) {
     //     mixer.update(0.01);
     // }
     // Update controls
+   
     controls.update();
     // Render the scene
     renderer.render(scene, camera);
